@@ -1,32 +1,247 @@
 <div class="w-screen">
+
   <header class="flex flex-row justify-center content-center items-center">
     <section class="max-w-content inline-flex flex-row justify-center content-center items-center gap-4 grow-0">
-      <%= image_tag "pp.jpeg", class: 'w-1/6 rounded-full'  %>
+      <%= image_tag "pp.jpeg", class: 'm-1  w-1/2 lg:w-1/6 rounded-full'  %>
       <div>
-        <h4 class="font-bold text-6xl">Emeric JUDITH</h4>
-        <p class="font-mono text-xs">• Ingénieur, Consultant, Développeur, passionné de technologies.</p>
+        <h4 class="font-bold font-mono text-3xl lg:text-6xl">Emeric JUDITH</h4>
+        <p class="text-xs lg:text-xl">• Ingénieur, Consultant, Développeur, passionné de technologies.</p>
+      <nav class="flex flex-row">
+      </nav>
       </div>
     </section>
-    <nav class="h-full">
-      <a href="https://github.com/YXME" >
-        <%= image_tag "github-icon.svg", class: 'w-8 m-2' %>
-      </a>
-      <a href="https://www.linkedin.com/in/ejudith/">
-        <%= image_tag "linkedin-icon.svg", class: 'w-8 m-2'%>
-      </a>
-      <%= mail_to "emeric@ejudith.fr" do %>
-        <%= image_tag "github-icon.svg", class: 'w-8 m-2'%>
-      <% end %>
-    </nav>
   </header>
+  <hr class="m-3 border-0.5 border-gray-200">
 
-  <article>
-    <h4>A propos de moi</h4>
-    <p>
+
+
+<!-- A propos -->
+  <article id="About" class="mt-5 mx-5 my-5 lg:mt-32 lg:mx-32 lg:my-32">
+    <section>
+      <h4 class="font-mono font-bold text-2xl lg:text-4xl text-blue-600">À propos de moi</h4>
+    </section>
+    <section>
+      <p class="break-normal text-xl mt-2">Bonjour ! 👋 Je m'appelle Emeric et j'ai 22 ans. Je suis jeune dîplomé de <a class="font-bold text-blue-600" href="www.esme.fr">l'ESME Sudria</a> avec 3 ans d'expériences dans le secteur du consulting bancaire.</p>
+      <p class="break-normal text-xl mt-2">Je suis également passionné de technologies et de développement, dans mon temps libre j'aime bien m'adonner à certains projets, simples comme le déploiement d'une instance de <a class="font-bold text-blue-600" href="https://github.com/searxng/searxng"/>SearXNG</a> afin de bénéficier d'un moteur de recherche personnel sécurisé ou encore travailler sur des projets plus conséquents comme la création d'un Bot Discord.</p>
+      <p class="break-normal text-xl mt-2">Ma formation m'a également permis de prendre part à d'autres projets de développement que je détaillerais plus bas. 😃</p> 
+      <button class="inline-block mt-3 m-1 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Consulter mon CV</button>
+    </section>
   </article>
 
+ <!-- Projets et Réalisations -->
+  <article id="Projects" class="mt-5 mx-5 my-5 lg:mt-32 lg:mx-32 lg:my-32">
+    <section>
+      <h4 class="font-mono font-bold text-2xl lg:text-4xl text-blue-600">Projets et réalisation</h4>
+    </section>
+    <section>
+      <section class="mt-2">
+        <h5 class="font-mono font-bold text-xl lg:text-3xl">Déploiement de SearXNG sur un serveur privé virtuel</h4>
+        <p class="font-mono text-md">Un projet d'une soirée.</p>
+
+        <p class="break-normal text-xl mt-2">Un soir, je suis tombé sur la vidéo d'un de mes Youtubeurs tech préféré : <a class="font-bold text-blue-600" href="https://youtube.com/NetworkChuck">NetworkChuck</a> montrant comment déployer son  propre moteur de recherche avec <a class="font-bold text-blue-600" href="https://github.com/searxng/searxng"/>SearXNG</a> le tout dans un container Docker en quelques minutes.</p>
+        <p class="break-normal text-xl mt-2">Ni une, ni deux, j'ai eu envie d'essayer ! 😬 En une petite heure et quelques bidouilles, mon instance personnelle de SearXNG était en ligne, et tourne encore aujourd'hui. Je m'en sers au quotidien comme moteur de recherche !</p>
+      </section>
+
+      <section class="mt-5">
+        <h5 class="font-mono font-bold text-xl lg:text-3xl" >Unni</h4>
+        <p class="font-mono text-md">ERP SaaS Software for Camping, Hotels & Restaurant</p>
+
+        <p class="break-normal text-xl mt-2">Unni est un projet réalisé dans le cadre de ma dernière année à l'ESME Sudria. Ce projet consiste en la réalisation d'un progiciel de gestion intégré (PGI/ERP) a destination des acteurs du secteur du tourisme (Camping, Hôtels et Restaurants).</p>
+        <p class="break-normal text-xl mt-2">Le progiciel se présente sous la forme d'une application web développé en TypeScript à l'aide du framework React et Next.JS ainsi que Tailwind pour le CSS.
+        <p></p>
+      </section>
+      <a href="https://gitlab.com/Danes99/unni_server">
+        <button class="inline-block mt-3 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Code Source (Front-End)</button>
+      </a>
+      <a href="https://gitlab.com/Danes99/unni_api">
+        <button class="inline-block mt-3 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Code Source (Back-End)</button>
+      </a>
+
+      <section class="mt-5">
+        <h5 class="font-mono font-bold text-xl lg:text-3xl">Zeitaku Figure Shop</h4>
+        <p class="font-mono text-md">Marketplace de Figurines de Collection</p>
+
+        <p class="break-normal text-xl mt-2">Zeitaku Figure Shop a été réalisé dans le cadre de ma deuxième année de cycle Ingénieur à l'ESME Sudria. Pour ce projet en utilisant le framework Vue.js nous devions réaliser un site web, connecté à une base de données PostgreSQL.</p>
+        <p class="break-normal text-xl mt-2">Mon bînome et moi-même étant collectionneurs, lui de figurine et moi de mangas, nous avons décidé de réaliser un site de vente de figurine rares et en résine : Zeitaku Figure Shop.</p>
+        <p class="break-normal text-xl mt-2">Nous nous sommes accordés sur l'ambiance du site, en cherchant à refléter le luxe au maximum. Nous nous étions également mis au défi de ne pas utiliser de framework CSS, afin de voir si nos connaissances seules tiennent la route.</p>
+      </section>
+      <a href="https://github.com/YXME/ZeitakuFigureShop">
+        <button class="inline-block mt-3 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Code source</button>
+      </a>
+
+      <section class="mt-5">
+        <h5 class="font-mono font-bold text-xl lg:text-3xl">Manga Digital Collection</h4>
+        <p class="font-mono text-md">Listing de Mangas et d'Animés via un site web et une application mobile</p>
+
+        <p class="break-normal text-xl mt-2">Manga Digital Collection (ou MDC en abrégé) est le nom de deux projets réalisés dans le cadre de ma première et deuxième année de cycle Ingénieur à l'ESME Sudria.</p>
+        <p class="break-normal text-xl mt-2">MDC permet de lister des mangas et animés publiquement pour les utilisateurs et leur permet ensuite d'en faire des listes personnels en fonction de leur visionnages et de leur goûts.</p>
+        <p class="break-normal text-xl mt-2">Le site et l'application permettent également la publication d'avis sur les références.</p>
+      </section>
+      <a href="https://github.com/YXME/MDC">
+        <button class="inline-block mt-3 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Code Source (Projet Web)</button>
+      </a>
+      <a href="https://github.com/YXME/MDC-APP">
+        <button class="inline-block mt-3 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Code Source (Application Android)</button>
+      </a>
+
+      <section class="mt-5">
+        <h5 class="font-mono font-bold text-xl lg:text-3xl">Secret Santa Bot</h4>
+        <p class="font-mono text-md">Bot Discord</p>
+
+        <p class="break-normal text-xl mt-2">Secret Santa Bot est un bot Discord que j'ai créé il y a quelques années pour permettre à mes ami.e.s et moi-même de faire le tirage au sort d'un Secret Santa.</p>
+        <p class="break-normal text-xl mt-2">Ce bot, développé en C# (.NET) à l'aide de la libraire Discord.NET reste très simple dans son fonctionnement.</p>
+        <p class="break-normal text-xl mt-2">J'ai également créé un autre bot Discord plus complet il y a quelques années : Jean-Pascaline, mais j'ai malheureusement abandonné le projet.</p>
+        <p class="break-normal text-xl mt-2">Peut-être qu'un jour je me lancerai dans un nouveau projet de bot Discord, qui sait...</p>
+      </section>
+      <a href="https://github.com/YXME/SecretSantaBot">
+        <button class="inline-block mt-3 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Code Source</button>
+      </a>
+
+      <section class="mt-5">
+        <h5 class="font-mono font-bold text-xl lg:text-3xl">Casque de Moto Connecté</h4>
+        <p class="font-mono text-md">Un casque de moto intelligent, connecté directement à votre smartphone.</p>
+
+        <p class="break-normal text-xl mt-2">Le Casque de Moto Connecté (on aurait vraiment du réfléchir à un meilleur nom...) est un projet réalisé dans le cadre de ma dernière année de BTS à l'ESME Sudria.  Le but de ce projet était de réaliser un Proof Of Concept (POC) d'un casque de moto connecté.</p>
+        <p class="break-normal text-xl mt-2">Dans le cadre de ce projet, j'ai été aménée à travailler sur la partie Android, via la création d'une application pour obtenir aisément les données météos et également pour pouvoir ouvrir un itinéraire via le système de navigation du téléphone en entrant uniquement une adresse.
+        <p class="break-normal text-xl mt-2">Lié au reste du casque et au module par commande vocale, cette application devait permettre de récupérer directement les informations nécéssaire (Demande d'obtention de la météo, itinéraire et adresse d'arrivée) et de les communiquer par voix au conducteur.</p>
+      </section>
+      <a href="https://github.com/YXME/CasqueConnecte">
+        <button class="inline-block mt-3 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">GitHub</button>
+      </a>
 
 
+      <section class="mt-5">
+        <h5 class="font-mono font-bold text-xl lg:text-3xl">Ce site Web</h4>
+        <p class="font-mono text-md">Un site personnel vitrine.</p>
 
-  <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">test</button>
+        <p class="break-normal text-xl mt-2">Depuis longtemps l'idée de réaliser mon propre site web me trotte dans l'esprit. 🤔 </p>
+        <p class="break-normal text-xl mt-2">Avec l'acquision d'un nom de domaine pour mes mails personnels (ejudith.fr) je me suis dit qu'il était grand temps de me lancer dans ce projet trop longtemps mis de côté.</p>
+        <p class="break-normal text-xl mt-2">J'ai réalisé ce site en quelque jours à l'aide du langage Ruby et du framework Rails et Talwind pour le CSS. Mes connaissances et projets précédents m'ont permis de rapidement déployer cette première version de mon site, que je compte améliorer avec le temps. 😇</p>
+      </section>
+      <a href="https://github.com/YXME/ejudith.fr">
+        <button class="inline-block mt-3 px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Code source</button>
+      </a>
+    </section>
+  </article>
+
+  <!-- Experiences -->
+  <article id="Experiences" class="mt-5 mx-5 my-5 lg:mt-32 lg:mx-32 lg:my-32">
+    <section>
+      <h4 class="font-mono font-bold text-2xl lg:text-4xl text-blue-600">Expériences</h4>
+    </section>
+    <section>
+      <section class="mt-2">
+        <h5 class="font-mono font-bold text-xl lg:text-3xl">Sopra Banking Software</h4>
+        <div class="flex flex-row">
+          <div class="ml-0.5 w-0.5 bg-gray-600"></div>
+          <!-- Consultant YMFF -->
+          <section class="ml-3">
+          <div>
+            <p class="break-normal font-mono text-md">Consultant en Alternance • Avril 2022 - Septembre 2022</p>
+            <p class="break-normal text-xl mt-2">En mission pour Yamaha Motor Finance France :</p>
+            <p class="break-normal text-xl mt-2">• Configuration et tests de l'application Cassiopae.</p>
+            <p class="break-normal text-xl mt-2">• Application de changement conformément à la demande client.</p>
+            <p class="break-normal text-xl mt-2">• Configuration de Cassiopae via PL/SQL.</p>
+          </div>
+          <!-- Dev VWFS -->
+          <div class="mt-5">
+            <p class="break-normal font-mono text-md">Développeur en Alternance • Avril 2021 - Avril 2022</p>
+            <p class="break-normal text-xl mt-2">En mission pour Volkswagen Financial Services :</p>
+            <p class="break-normal text-xl mt-2">• Résolution de tickets bugs et d'incidents.</p>
+            <p class="break-normal text-xl mt-2">• Développement de correctifs en JAVA et en PL/SQL.</p>
+            <p class="break-normal text-xl mt-2">• Maintenance de Cassiopae.</p>          
+          </div>
+          <!-- Consultant CALEF -->
+          <div class="mt-5">
+            <p class="break-normal font-mono text-md">Consultant en Alternance • Septembre 2019 - Avril 2021</p>
+            <p class="break-normal text-xl mt-2">En mission au Crédit Agricole Leasing & Factoring :</p>
+            <p class="break-normal text-xl mt-2">• Configuration et tests de l'application Cassiopae.</p>
+            <p class="break-normal text-xl mt-2">• Suivi des incidents clients via l'outil JIRA.</p>
+            <p class="break-normal text-xl mt-2">• Application de changement conformément à la demande client.</p>
+            <p class="break-normal text-xl mt-2">• Création de scripts Shell en vue d'automatisation de process technique.</p>
+            <p class="break-normal text-xl mt-2">• Configuration de Cassiopae via PL/SQL.</p>            
+            <p class="break-normal text-xl mt-2">• Intégration de Cassiopae pour le métier du Crédit Bail Immobilier.</p>
+            <p class="break-normal text-xl mt-2">• Accompagnement au changement et conseils.</p>
+
+          </div>
+          </section>
+        </div>
+      </section>
+    <section class="mt-5">
+      <h5 class="font-mono font-bold text-xl lg:text-3xl">Ministère de l'Intérieur</h4>
+      <div class="flex flex-row">
+        <!-- Dev MI -->
+        <div class="ml-0.5 w-0.5 h- bg-gray-600"></div>
+        <section class="ml-3">
+        <div>
+          <p class="break-normalfont-mono text-md">Stagiaire Développeur • Mai 2019 - Juillet 2019</p>
+          <p class="break-normal text-xl mt-2">Développement d'un logiciel de simulation de management d'entreprise :</p>
+          <p class="break-normal text-xl mt-2">• Création d'une interface graphique via Windows Forms.</p>
+          <p class="break-normal text-xl mt-2">• Récupération et compilation d'informations dans un fichier XML.</p>
+          <p class="break-normal text-xl mt-2">• Développement d'un socket de communication entre l'interface graphique et le moteur du logiciel en C++.</p>
+        </div>
+    </section>
+  </article>
+
+  <!-- Formations -->
+  <article id="Formations" class="mt-5 mx-5 my-5 lg:mt-32 lg:mx-32 lg:my-32">
+    <section>
+      <h4 class="font-mono font-bold text-2xl lg:text-4xl text-blue-600">Formations et Diplômes</h4>
+    </section>
+    <section>
+      <section class="mt-2">
+        <h5 class="font-mono font-bold text-xl lg:text-3xl">ESME-Sudria</h4>
+        <div class="flex flex-row">
+          <div class="ml-0.5 w-0.5 bg-gray-600"></div>
+          <!-- Ingé -->
+          <section class="ml-3">
+          <div>
+            <p class="break-normal font-mono text-md">Diplôme d'Ingénieur par l'apprentissage • Septembre 2019 - Septembre 2022</p>
+            <p class="break-normal text-xl mt-2">Majeure Informatique et Réseaux</p>
+          </div>
+          <!-- BTS -->
+          <div class="mt-5">
+            <p class="break-normal font-mono text-md">BTS Systèmes Numériques • Septembre 2017 - Juin 2019</p>
+            <p class="break-normal text-xl mt-2">Option Informatique et Réseaux - Major de Promotion</p>   
+          </div>
+          </section>
+        </div>
+      </section>
+    <section class="mt-5">
+      <h5 class="font-mono font-bold text-xl lg:text-3xl">Lycée Agora</h4>
+      <div class="flex flex-row">
+        <!--Bac -->
+        <div class="ml-0.5 w-0.5 h- bg-gray-600"></div>
+        <section class="ml-3">
+        <div>
+          <p class="font-mono text-md">Baccalauréat STI2D • Septembre 2015 - Juin 2017</p>
+          <p class="break-normal text-xl mt-2">Option Systèmes d'Information et Numériques - Mention Bien</p>
+        </div>
+    </section>
+  </article>
+
+  <hr class="m-3 border-0.5 border-gray-200">
+  <footer class="flex flex-row justify-center content-center items-center mt-10 mb-10 gap-2">
+  <div class="flex flex-col h-full">
+    <h4 class="font-mono text-3xl text-center font-bold lg:font-normal lg:text-left">Emeric JUDITH</h4>
+    <div class="flex flex-row justify-center content-center items-center gap-2">
+      <!-- Contact -->
+        <a href="https://github.com/YXME" >
+          <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">GitHub</button>
+        </a>
+        <a href="https://www.linkedin.com/in/ejudith/">
+          <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">LinkedIn</button>
+        </a>
+        <%= mail_to "emeric@ejudith.fr" do %>
+          <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">E-Mail</button>
+        <% end %>
+      </div>
+    </div>
+    <ul class="text-xl ml-10 hidden lg:block">
+      <li><a class="font-bold text-blue-600" href="#About">À propos</a></li>
+      <li><a class="font-bold text-blue-600" href="#Projects">Projets</a></li>
+      <li><a class="font-bold text-blue-600" href="#Experiences">Expériences</a></li>
+      <li><a class="font-bold text-blue-600" href="#Formations">Formations</a></li>
+    </ul>
+  </footer>
 </div>
