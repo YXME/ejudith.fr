@@ -1,0 +1,32 @@
+<div class="w-screen">
+  <header class="flex flex-row justify-center content-center items-center">
+    <section class="max-w-content inline-flex flex-row justify-center content-center items-center gap-4 grow-0">
+      <%= image_tag "pp.jpeg", class: 'w-1/6 rounded-full'  %>
+      <div>
+        <h4 class="font-bold text-6xl">Emeric JUDITH</h4>
+        <p class="font-mono text-xs">• Ingénieur, Consultant, Développeur, passionné de technologies.</p>
+      </div>
+    </section>
+    <nav class="h-full">
+      <a href="https://github.com/YXME" >
+        <%= image_tag "github-icon.svg", class: 'w-8 m-2' %>
+      </a>
+      <a href="https://www.linkedin.com/in/ejudith/">
+        <%= image_tag "linkedin-icon.svg", class: 'w-8 m-2'%>
+      </a>
+      <%= mail_to "emeric@ejudith.fr" do %>
+        <%= image_tag "github-icon.svg", class: 'w-8 m-2'%>
+      <% end %>
+    </nav>
+  </header>
+
+  <article>
+    <h4>A propos de moi</h4>
+    <p>
+  </article>
+
+
+
+
+  <button class="inline-block px-6 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded-full shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">test</button>
+</div>
